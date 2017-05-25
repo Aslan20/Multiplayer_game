@@ -11,15 +11,15 @@ var USERS = {
     "bob": "123",
 };
 
-var isValidPassword = function(data) {
+var isvalidPassword = function(data) {
     return USERS[data.username] === data.password;
 };
 
-var isUsernameTaken = function(data) {
+var isusernameTaken = function(data) {
     return USERS[data.username];
 };
 
-var addUser = function(data) {
+var adduser = function(data) {
     USERS[data.username] = data.password;
 };
 
