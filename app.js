@@ -55,9 +55,6 @@ var Player = function(id) {
     self.pressingRight = false;
     self.pressingLeft = false;
     self.pressingUp = false;
-    self.pressingDown = false;
-    self.pressingAttack = false;
-    self.mouseAngle = 0;
     self.maxSpd = 10;
 
     var super_update = self.update;
@@ -90,6 +87,15 @@ var Player = function(id) {
 
     return self;
 };
+
+    self.update = function() {
+        self.updatePosition();
+    };
+
+    self.updatePosition = function() {
+        self.x += self.spdX;
+        self.y += self.spdY;
+    };
 
 Player.list = {};
 
