@@ -1,0 +1,16 @@
+{
+  "name": "xspace",
+  "version": "1.0.0",
+  "description": "space traveler simulator online",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vlad",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.14.0",
+    "socket.io": "^1.7.2"
+  }
+}
